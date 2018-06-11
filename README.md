@@ -10,11 +10,12 @@ CT-Toolkit contains two functions as of version 1.0.0 (released 12/08/2018).
 
 The `easy_rpart` function is essentially a wrapper that relies on other packages used to build, prune (based on optimisation of performance metrics), test, and visualise the results of Classification Trees constructed via the CART algorithm (Breiman et al., 1984).
 
-The `runcor_analysis` function represents a second wrapper used for computing and visualising running/rolling correlations (Pearson, Kendall, or Spearman) between two specified variables using either absolute values, first absolute differences, and/or first relative differences.
+The `runcor_analysis` function represents another wrapper used for computing and visualising running/rolling correlations (Pearson, Kendall, or Spearman) between two specified variables using either absolute values, first absolute differences, and/or first relative differences.
 
 # Getting started
 1. Install both [R](https://cran.r-project.org/mirrors.html) and [RStudio](https://www.rstudio.com/products/rstudio/download/) using the provided links to official sources.
-2. Download the latest CT-Toolkit release from the [repository root] (https://github.com/Deniz-Koseoglu/CT-Toolkit) and unpack the .zip archive into an easy-to-find directory of your choice.
+2. Download the latest CT-Toolkit release from the [repository root](https://github.com/Deniz-Koseoglu/CT-Toolkit) and unpack the .zip archive into an easy-to-find directory of your choice.
+3. Open the "CT-Toolkit" folder and access the "CT_Toolkit.R" file using RStudio.
 
 # Functions
 ### The `easy_rpart` function
