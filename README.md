@@ -10,4 +10,9 @@ CT-Toolkit contains two functions as of version 1.0.0 (released 12/08/2018).
 
 The `easy_rpart` function is essentially a wrapper that relies on other packages used to build, prune (based on optimisation of performance metrics), test, and visualise the results of Classification Trees constructed via the CART algorithm (Breiman et al., 1984).
 
-The `runcor_analysis` function represents a second wrapper used for computing and visualising running/rolling correlations between two specified variables using either absolute values, first absolute differences, or first relative differences.
+The `runcor_analysis` function represents a second wrapper used for computing and visualising running/rolling correlations between two specified variables using either absolute values, first absolute differences, and/or first relative differences.
+
+# Functions
+## The `easy_rpart` function
+
+## The `runcor_analysis` function
