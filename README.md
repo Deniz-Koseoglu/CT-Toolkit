@@ -19,6 +19,32 @@ The `runcor_analysis` function represents another wrapper used for computing and
 
 # Functions
 ### The `easy_rpart` function
+#### Description
+
+
+#### Usage
+
+
+#### Arguments
+
+
+#### Details
+
+
+#### Values
 
 
 ### The `runcor_analysis` function
+#### Description
+
+
+#### Usage
+
+
+#### Arguments
+
+
+#### Details
+
+#### Values
+
