@@ -32,7 +32,13 @@ A function to build, prune, and test Classification Tree and Random Forest model
 
 #### Usage
 ```r
-easy_rpart(training_data = paste(getwd(), "/Training", sep=""), separ = ",", target_var, descriptive_vars, scale_vars=FALSE, descvar_units="%", split_criterion = "information", class_method = "CART", prune_method = "both", tree_number = 500, rf_vars = 3,cv_method = "repeatedcv", folds = 10, replicates = 5, train_percent = 70, tuning_metric = "Kappa", predictions = TRUE, prediction_datasets = paste(getwd(), "/Prediction",sep=""), extension = "\\.csv$", plot_predictions = TRUE, prediction_axis = c("Age","SpSIC"), plot_grp_labs=waiver(), tvar_lines=c(10,50), plot_cols=brewer.pal(5, "Set3"), export_results = TRUE, export_plots=TRUE, x_lab=waiver(), y_lab=waiver(), y_limit = NULL, y_cut = waiver(), width = 10, height = 10, export_path = getwd(), seed_val = 42)
+easy_rpart(training_data = paste(getwd(), "/Training", sep=""), separ = ",", target_var, descriptive_vars, scale_vars=FALSE, 
+descvar_units="%", split_criterion = "information", class_method = "CART", prune_method = "both", tree_number = 500, rf_vars = 3, 
+cv_method = "repeatedcv", folds = 10, replicates = 5, train_percent = 70, tuning_metric = "Kappa", predictions = TRUE, 
+prediction_datasets = paste(getwd(), "/Prediction",sep=""), extension = "\\.csv$", plot_predictions = TRUE, 
+prediction_axis = c("Age","SpSIC"), plot_grp_labs=waiver(), tvar_lines=c(10,50), plot_cols=brewer.pal(5, "Set3"), export_results = TRUE, 
+export_plots=TRUE, x_lab=waiver(), y_lab=waiver(), y_limit = NULL, y_cut = waiver(), width = 10, height = 10, export_path = getwd(), 
+seed_val = 42)
 ```
 
 #### Arguments
