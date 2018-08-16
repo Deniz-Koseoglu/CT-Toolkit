@@ -8,3 +8,9 @@ Following the installation of CT Toolkit (see [Getting Started](https://github.c
 
 The example structure used here is located on **Drive C:/CT Toolkit/** as follows:
 ![Image1](https://image.ibb.co/dMh7Ne/Untitled.png)
+
+This allows for easy storage of **training datasets**, **prediction datasets**, and **CT Toolkit output** in the Training, Prediction, and Results folders, respectively.
+Once the folder structure has been created, the CT_Toolkit.R file, which contains the source code, may be sourced from R (or RStudio) as follows:
+```r
+source(C:/CT Toolkit/CT_Toolkit.R)
+```
