@@ -42,7 +42,7 @@ seed_val = 42)
 ```
 
 #### Arguments
-```r **training_data**``` A character value with the full path to the training dataset in .CSV format, or a data.frame object                                     the training dataset.
+**training_data**: A character value with the full path to the training dataset in .CSV format, or a data.frame object containing the training dataset.
 
 #### Details
 
