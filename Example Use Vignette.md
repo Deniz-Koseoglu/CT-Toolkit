@@ -12,5 +12,25 @@ The example structure used here is located on **Drive C:/CT Toolkit/** as follow
 This allows for easy storage of **training datasets**, **prediction datasets**, and **CT Toolkit output** in the Training, Prediction, and Results folders, respectively.
 Once the folder structure has been created, the CT_Toolkit.R file, which contains the source code, may be sourced from R (or RStudio) as follows:
 ```r
-source(C:/CT Toolkit/CT_Toolkit.R)
+source("C:/CT Toolkit/CT_Toolkit.R")
+```
+
+# Using the functions
+#### Downloading example data
+The example training dataset to build Classification Tree (CT) models, which contains multivariate Highly-Branched Isoprenoid (HBI) data for 198 surface sediments in the Barents Sea, may be downloaded [here](). Place this file in the **C:/CT Toolkit/Training** folder.
+The example prediction datasets, which contain HBI data for several marine sediment cores, may be downloaded [here](). Place the 3 files in the **C:/CT Toolkit/Prediction** folder. We will reconstruct sea ice conditions for these sedimentary records via the CT model trained using surface sediments.
+
+#### Example code
+All code showcasing the functions in this vignette may be downloaded [here]().
+
+#### Creating CT models
+Using the example data that we just downloaded in conjunction with the `easy_rpart` function, we can create and test a CT model via the following code:
+```r
+Code goes here
+```
+
+#### Calculating running correlations
+For running correlations, we will use the following code from the `runcor_analysis` function:
+```r
+Code goes here
 ```
