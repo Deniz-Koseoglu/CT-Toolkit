@@ -17,7 +17,7 @@ The `runcor_analysis` function represents another wrapper used for computing and
 2. Download the latest CT-Toolkit release from the [repository root](https://github.com/Deniz-Koseoglu/CT-Toolkit) and unpack the .zip archive into an easy-to-find directory of your choice.
 3. Open RStudio and create a new R script via **File -> New File -> R Script**.
 4. Source the CT Toolkit functions  from the "CT_Toolkit.R" file located in the directory to which the CT-Toolkit .ZIP archive was unpacked. For example, assuming the "CT_Toolkit.R" file is located at C:/CT-Toolkit, the following command may be used:
-```Rscript
+```ruby
 source("C:/CT-Toolkit/CT_Toolkit.R")
 ```
 5. Note that the "CT-Toolkit" folder contains the "CT_Toolkit.R" file, which can be opened in RStudio to examine and alter the source code, if required.
