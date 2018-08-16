@@ -90,6 +90,7 @@ Please refer to the [CT Toolkit Vignette](http://www.google.co.uk/) for *reprodu
 #### Values
 Apart from exporting model performance metrics, classification results and .PDF plots to a chosen directory, within the R environment, the function returns rpart or randomForest objects containing the full and pruned tree models, based on the parameters set by the user. Cross validation results and performance metrics for each model are also returned. This may be changed in the future such that the function does not return anything (i.e. returns NULL) within the R environment, as the exported results encompass all the required and useful output from the function.
 
+
 ### The `runcor_analysis` function
 #### Description
 A function for computing and visualising running/rolling correlations (Pearson, Kendall, or Spearman) between two specified variables using either absolute values, first absolute differences, and/or first relative differences. This can be supplemented by changepoint analysis to estimate the locations of significant correlation shifts.
