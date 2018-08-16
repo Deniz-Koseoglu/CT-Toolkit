@@ -3,6 +3,8 @@ This vignette was created to briefly showcase the usage of CT Toolkit functions,
 
 Please note that the vignette assumes basic knowledge of R syntax (version >=3.4.2).
 
+The current version of CT Toolkit (1.0.0) has so far been tested solely on the Windows 10 operating system.
+
 # Setting up a working directory
 Following the installation of CT Toolkit (see [Getting Started](https://github.com/Deniz-Koseoglu/CT-Toolkit#getting-started)), it might be useful to create a centralised folder to keep all input datasets, as well as exported results.
 
@@ -102,6 +104,7 @@ The output of `runcor_analysis` should consist of two files:
 ![Image3](https://image.ibb.co/i05rXe/Untitled3.png)
 
 1. The **.pdf file** contains the plots for every combination of running correlations, p-value corrections, and changepoint analysis algorithms chosen by the user.
+
 2. The **.xlsx file** contains correlation coefficients and p-values for every data type chosen for the running correlations (in this case: Raw Data, Absolute Differences, and Relative Differences on sheets 1, 2, and 3). The final sheet contains the changepoint locations for each of these data types along the x-axis (which is represented by Age, in cal kyr BP, in this example).
 
 The full list and descriptions of `runcor_analysis` arguments are available [here]().
