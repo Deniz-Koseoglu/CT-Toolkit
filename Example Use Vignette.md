@@ -12,19 +12,19 @@ The example structure used here is located on **Drive C:/CT Toolkit/** as follow
 ![Image1](https://image.ibb.co/dMh7Ne/Untitled.png)
 
 This allows for easy storage of **training datasets**, **prediction datasets**, and **CT Toolkit output** in the Training, Prediction, and Results folders, respectively.
-Once the folder structure has been created, the **CT_Toolkit.R** file (available [here]()), which contains the source code, may be sourced from R (or RStudio) as follows:
+Once the folder structure has been created, the **CT_Toolkit.R** file (available [here](https://github.com/Deniz-Koseoglu/CT-Toolkit/tree/master/R%20Files)), which contains the source code, may be sourced from R (or RStudio) as follows:
 ```r
 source("C:/CT Toolkit/CT_Toolkit.R")
 ```
 
 # Using the functions
 #### Downloading example data
-1. The example training dataset to build Classification Tree (CT) models, which contains multivariate Highly-Branched Isoprenoid (HBI) data for 198 surface sediments in the Barents Sea, may be downloaded [here](). Place this file in the **C:/CT Toolkit/Training** folder.
+1. The example training dataset to build Classification Tree (CT) models, which contains multivariate Highly-Branched Isoprenoid (HBI) data for 198 surface sediments in the Barents Sea, may be downloaded [here](https://github.com/Deniz-Koseoglu/CT-Toolkit/tree/master/Example%20Data/Training). Place this file in the **C:/CT Toolkit/Training** folder.
 
-2. The example prediction datasets, which contain HBI data for several marine sediment cores, may be downloaded [here](). Place the 3 files in the **C:/CT Toolkit/Prediction** folder. We will reconstruct sea ice conditions for these sedimentary records via the CT model trained using surface sediments.
+2. The example prediction datasets, which contain HBI data for several marine sediment cores, may be downloaded [here](https://github.com/Deniz-Koseoglu/CT-Toolkit/tree/master/Example%20Data/Prediction). Place the 3 files in the **C:/CT Toolkit/Prediction** folder. We will reconstruct sea ice conditions for these sedimentary records via the CT model trained using surface sediments.
 
 #### Downloading example code
-All code showcasing the functions in this vignette may be downloaded [here]().
+All code showcasing the functions in this vignette may be downloaded [here](https://github.com/Deniz-Koseoglu/CT-Toolkit/tree/master/R%20Files).
 
 #### Creating CT models
 Using the example data that we just downloaded in conjunction with the `easy_rpart` function, we can create and test a CT model via the following code:
@@ -70,7 +70,7 @@ The **Results** of `easy_rpart` analysis, assuming the function ran correctly, w
 
 3. Finally, the **.xlsx file** contains the pruned model performance metrics and variable importance values (sheets 1 and 2), results of cross validation classification for the training set (sheet 3), and downcore predictions using the pruned trees (sheet 4).
 
-You may want to try changing some of the values for the function arguments (the full list and descriptions of which are available [here]()), and re-run the code to test combinations of parameters and how these affect the output.
+You may want to try changing some of the values for the function arguments (the full list and descriptions of which are available [here](https://github.com/Deniz-Koseoglu/CT-Toolkit#arguments)), and re-run the code to test combinations of parameters and how these affect the output.
 
 #### Calculating running correlations
 For running correlations, we will use the following code from the `runcor_analysis` function to calculate correlation between IP<sub>25</sub> and IPSO<sub>25</sub> in sediment core KA11:
@@ -107,4 +107,4 @@ The output of `runcor_analysis` should consist of two files:
 
 2. The **.xlsx file** contains correlation coefficients and p-values for every data type chosen for the running correlations (in this case: Raw Data, Absolute Differences, and Relative Differences on sheets 1, 2, and 3). The final sheet contains the changepoint locations for each of these data types along the x-axis (which is represented by Age, in cal kyr BP, in this example).
 
-The full list and descriptions of `runcor_analysis` arguments are available [here]().
+The full list and descriptions of `runcor_analysis` arguments are available [here](https://github.com/Deniz-Koseoglu/CT-Toolkit#arguments-1).
