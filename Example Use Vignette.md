@@ -59,6 +59,9 @@ easy_rpart_results <- easy_rpart(training_data = "C:/CT Toolkit/Training/BS_surf
                                  export_path="C:/CT Toolkit/Results",
                                  seed_val=42)
 ```
+The **Results** of `easy_rpart` analysis, assuming the function ran correctly, will be exported to **C:/CT Toolkit/Results** and should consist of three files:
+![Image2](https://image.ibb.co/f85N5z/Untitled2.png)
+
 Each argument is presented on a new line for clarity. Try changing some of the values for the function arguments (the full list and descriptions of which are available [here]()), and re-run the code.
 
 #### Calculating running correlations
@@ -89,4 +92,4 @@ runcor_results <- runcor_analysis(data_path="C:/CT Toolkit/Prediction/KA11.csv",
                                   height=7)
 
 ```
-The full list and descriptions of `runcor_analysis` arguments are available [here]()).
+The full list and descriptions of `runcor_analysis` arguments are available [here]().
