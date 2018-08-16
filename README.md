@@ -3,7 +3,7 @@ A Classification Tree (CT) and running correlation toolkit created in [RStudio](
 
 D. Köseoğlu, S.T. Belt, K. Husum, and J. Knies (2018), "An assessment of biomarker-based multivariate classification methods versus the PIP<sub>25</sub> index for paleo Arctic sea ice reconstruction" (manuscript submitted to the <i>Organic Geochemistry</i> journal).
 
-For a simplified introduction to decision tree methodology and the use of CT models for reconstructing past sea ice conditions, please also see:
+For a simplified introduction to decision tree methodology, training and use of CT models for reconstructing centennial-scale sea ice conditions, please also see:
 
 D. Köseoğlu, S.T. Belt, L. Smik, H. Yao, G. Panieri, and J. Knies (2018), "Complementary biomarker-based methods for characterising Arctic sea ice conditions: A case study comparison between multivariate analysis and the PIP<sub>25</sub> index", *Geochimica et Cosmochimica Acta* **222**, pp. 406-420. DOI: https://doi.org/10.1016/j.gca.2017.11.001. 
 
