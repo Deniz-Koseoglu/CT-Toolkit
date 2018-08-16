@@ -43,7 +43,7 @@ seed_val = 42)
 
 #### Arguments
 | Argument        | Description           |
-| ------------- |:-------------:|
+| ------------- |-------------|
 | **training_data**     | A character value with the full path to the training dataset in .CSV format, or a data.frame object containing the training dataset. |
 | col 2 is      | centered      |
 | zebra stripes | are neat      |
