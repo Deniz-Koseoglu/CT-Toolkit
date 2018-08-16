@@ -29,7 +29,7 @@ source("C:/CT-Toolkit/CT_Toolkit.R")
 ```
 You are now ready to use the functions.
 
-5. Note that although the "CT_Toolkit.R" file does not have to be opened, it contains the source code which can be examined and altered by the user to add or change functionality, if required.
+5. Note that although the "CT_Toolkit.R" file does not have to be opened directly in R (or RStudio), it contains the source code which can be examined and altered by the user to add or change functionality, if required.
 
 # Functions
 ### The `easy_rpart` function
