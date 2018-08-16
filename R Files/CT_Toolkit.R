@@ -11,25 +11,6 @@ easy_rpart <- function(training_data=paste(getwd(), "/Training", sep=""), separ=
   
   invisible(lapply(list.of.packages, require, character.only = TRUE))
   
-  #library(rpart)
-  #library(data.table)
-  #library(car)
-  #library(readr)
-  #library(rattle)
-  #library(rpart.plot)
-  #library(e1071)
-  #library(DMwR)
-  #library(MLmetrics)
-  #library(rpartScore)
-  #library(pROC)
-  #library(caret)
-  #library(xlsx)
-  #library(randomForest)
-  #library(qpcR)
-  #library(scales)
-  #library(ggplot2)
-  #library(RColorBrewer)
-  
   options(warn=-1)
   
   train_file <- basename(training_data)
