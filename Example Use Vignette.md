@@ -17,8 +17,9 @@ source("C:/CT Toolkit/CT_Toolkit.R")
 
 # Using the functions
 #### Downloading example data
-The example training dataset to build Classification Tree (CT) models, which contains multivariate Highly-Branched Isoprenoid (HBI) data for 198 surface sediments in the Barents Sea, may be downloaded [here](). Place this file in the **C:/CT Toolkit/Training** folder.
-The example prediction datasets, which contain HBI data for several marine sediment cores, may be downloaded [here](). Place the 3 files in the **C:/CT Toolkit/Prediction** folder. We will reconstruct sea ice conditions for these sedimentary records via the CT model trained using surface sediments.
+1. The example training dataset to build Classification Tree (CT) models, which contains multivariate Highly-Branched Isoprenoid (HBI) data for 198 surface sediments in the Barents Sea, may be downloaded [here](). Place this file in the **C:/CT Toolkit/Training** folder.
+
+2. The example prediction datasets, which contain HBI data for several marine sediment cores, may be downloaded [here](). Place the 3 files in the **C:/CT Toolkit/Prediction** folder. We will reconstruct sea ice conditions for these sedimentary records via the CT model trained using surface sediments.
 
 #### Example code
 All code showcasing the functions in this vignette may be downloaded [here]().
