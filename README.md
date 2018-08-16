@@ -90,8 +90,12 @@ Apart from exporting model performance metrics, classification results and .PDF 
 A function for computing and visualising running/rolling correlations (Pearson, Kendall, or Spearman) between two specified variables using either absolute values, first absolute differences, and/or first relative differences. This can be supplemented by changepoint analysis to estimate the locations of significant correlation shifts.
 
 #### Usage
-
-
+```r
+runcor_analysis(data_path, separ=",", cor_vars, runcor_permutations="all", cor_method="pearson", cor_window=9, move_by=1,
+                confid_lvl=0.95, cor_align="center", output_vars="all", x_var, x_lab, y_limit=NA, pval_corrections="all",
+                pval_labels="auto", plot_cols=brewer.pal(5, "Set3"), chgpt_methods="all", export_results=TRUE, 
+                print_plots=TRUE, export_plots=TRUE, height=7, width=10, export_path=getwd())
+```
 #### Arguments
 
 
