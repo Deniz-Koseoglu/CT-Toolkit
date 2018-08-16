@@ -23,6 +23,7 @@ R (>=3.4.2), rpart, data.table, car, readr, rattle, rpart.plot, e1071, DMwR, MLm
 ```r
 source("C:/CT-Toolkit/CT_Toolkit.R")
 ```
+You are now ready to use the functions.
 5. Note that the "CT-Toolkit" folder contains the "CT_Toolkit.R" file, which can be opened in RStudio to examine and alter the source code, if required.
 
 # Functions
@@ -42,12 +43,42 @@ seed_val = 42)
 ```
 
 #### Arguments
-| Argument        | Description           |
+| Argument | Description |
 | ------------- |-------------|
-| **training_data** | A character value with the full path to the training dataset in .CSV format, or a data.frame object containing the training dataset. If no value is explicitly provided, defaults to the working directory, which should contain a folder labelled "Training" containing the training dataset. |
-| **separ**      | Separator value to use for imported .CSV files. Defaults to a comma.|
+| **training_data** | A character value with the full path to the training dataset in .CSV format. If no value is explicitly provided, defaults to the working directory, which should contain a folder labelled "Training" containing the training dataset. |
+| **separ** | Separator value to use for imported .CSV files. Defaults to a comma.|
 | **target_var** | A character value with the column name containing class information for the training dataset. Can also be provided as a list of 2 or 3 elements. If a list of 2 is provided, the first element should be the column name containing the class information, while the second element should contain the preferred order of the classes that will be shown in graphical output. A list of 3 should only be provided if the class information is not readily available and should instead be derived using threshold values of a data column (e.g. using 10% and 50% cutoff values of spring sea ice concentration to create 3 classes of sea ice conditions). In such cases, the first list element should contain the column name from which to derive class data, while the second element should contain the threshold values to derive class information from and the desired class labels, respectively.|
-
+| **descriptive_vars** | A character vector of column names from the training dataset to be used as descriptive variables for model training. |
+| **scale_vars** | A TRUE/FALSE logical that scales the descriptive variables defined by the **descriptive_vars** argument to percentages of their total. Defaults to FALSE, thus assuming that the descriptive variables have already been scaled. |
+| **descvar_units** | A character value denoting descriptive variable units to show in graphical output, such as the hierarchical CT structure. Defaults to "%". |
+| **split_criterion** | The splitting criterion to use for determining node impurity when calculating splitting rules. The default is "information", which uses Information Gain. The Gini Index can also be used by assigning the value "gini". This argument is internally passed to the **rpart** function from the eponymous package. |
+| **class_method** | The type of classification model to build, passed as a character value. Can be one of: "CART" or "RF". Defaults to "CART", while Random Forest models can be built using the alternative "RF". |
+| **prune_method** | The pruning strategy to use for determination of optimal tree size. Can be one of: "MinCP", "1SE" or "both" (the default), corresponding to using the minimum cross-validation error, 1-Standard Error rule, or both methods, respectively.|
+| **tree_number** | Only relevant when **class_method** is "RF". The number of trees to include in the random forest model (defaults to 500). |
+| **rf_vars** | Only relevant when **class_method** is "RF". The number of descriptive variables to try at each split when building a random forest model (defaults to 3). |
+| **cv_method** | The cross validation method to use for reducing positive bias when calculating model performance metrics. Can be one of: "repeatedcv" (the default), "LOOCV", "LGOCV", or "oob". The out-of-bag error estimate is only available when **class_method** is "RF". |
+| **folds** | The number of folds to use for cross-validation. Defaults to 10. |
+| **repeats** | The number of times to repeat the cross-validation procedure before final performance metrics are aggregated. Defaults to 5. |
+| **train_percent** | Only used when **cv_method** is "LGOCV". The percentage of the training set to use for model training. The remainder will be used for testing. Defaults to 70. |
+| **tuning_metric** | The performance metric to maximize during tree pruning to select the optimal model. Can be one of: "Accuracy" or "Kappa" (the default). |
+| **predictions** | A TRUE/FALSE logical. Should the trained CT or RF model be used to classify new samples (e.g. downcore records)? Defaults to TRUE. |
+| **prediction_datasets** | The directory containing dataset(s) to derive class predictions for, passed as a character value. If no value is explicitly provided, defaults to the working directory, which should contain a folder labelled "Prediction" containing the prediction dataset(s). |
+| **extension** | The file extension of the prediction datasets. **NOTE**: Currently, only detecting .CSV files is supported. |
+| **plot_predictions** | A TRUE/FALSE logical. Should the model-derived classes for the prediction dataset(s) be plotted? Defaults to TRUE. |
+| **prediction_axis** | A character vector of length 2, where the first and second elements are column names which should be used for the x and y axis of the prediction dataset plots. Defaults to c("Age", "SpSIC"), which assumes these columns are present in all prediction datasets. |
+| **plot_grp_labs** | The labels to use for predicted classes in the prediction dataset plots. By default, these are automatically taken from the training data. |
+| **tvar_lines** | Draws dashed horizontal lines at specified y-values in the prediction dataset plots (default values are 10 and 50). Useful for displaying class boundaries used in the training set. |
+| **plot_cols** | A character vector of colours to use for different classes in the prediction dataset plots. By default, these are generated automatically.  |
+| **export_results** | A TRUE/FALSE logical. Should model performance metrics and class predictions be exported as an .XLSX file? Defaults to TRUE. |
+| **export_plots** | A TRUE/FALSE logical. Should plots be exported as a .PDF file? Defaults to TRUE. |
+| **x_lab** | The x-axis label to use for prediction dataset plots. Determined automatically from the data by default. |
+| **y_lab** | The y-axis label to use for prediction dataset plots. Determined automatically from the data by default. |
+| **y_limit** | Defaults to NULL. |
+| **y_cut** |  |
+| **width** | The width of exported .PDF plots. Defaults to 10 inches. |
+| **height** | The height of exported .PDF plots. Defaults to 10 inches. |
+| **export_path** | The character value for a directory to export results and plots to. Defaults to the working directory. |
+| **seed_val** | The random seed value to use for reproducible results with a given dataset. Can be any integer. The default is 42. |
 
 #### Details
 
