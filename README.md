@@ -85,7 +85,7 @@ seed_val = 42)
 | **seed_val** | The random seed value to use for reproducible results with a given dataset. Can be any integer. The default is 42. |
 
 #### Details
-Please refer to the [CT Toolkit Vignette](http://www.google.co.uk/) for *reproducible* usage examples of all functions. Relevant example training and prediction datasets are available from the [repository](https://github.com/Deniz-Koseoglu/CT-Toolkit/tree/master/Example%20Data).
+Please refer to the [CT Toolkit Vignette](https://github.com/Deniz-Koseoglu/CT-Toolkit/blob/master/Example%20Use%20Vignette.md) for *reproducible* usage examples of all functions. Relevant example training and prediction datasets are available from the [repository](https://github.com/Deniz-Koseoglu/CT-Toolkit/tree/master/Example%20Data).
 
 #### Values
 Apart from exporting model performance metrics, classification results and .PDF plots to a chosen directory, within the R environment, the function returns rpart or randomForest objects containing the full and pruned tree models, based on the parameters set by the user. Cross validation results and performance metrics for each model are also returned. This may be changed in the future such that the function does not return anything (i.e. returns NULL) within the R environment, as the exported results encompass all the required and useful output from the function.
@@ -130,7 +130,7 @@ runcor_analysis(data_path, separ=",", cor_vars, runcor_permutations="all", cor_m
 | **export_path** | The character value for a directory to export results and plots to. Defaults to the working directory. |
 
 #### Details
-Please refer to the [CT Toolkit Vignette](http://www.google.co.uk/) for *reproducible* usage examples of all functions. Associated example datasets are available from the [repository](https://github.com/Deniz-Koseoglu/CT-Toolkit/tree/master/Example%20Data).
+Please refer to the [CT Toolkit Vignette](https://github.com/Deniz-Koseoglu/CT-Toolkit/blob/master/Example%20Use%20Vignette.md) for *reproducible* usage examples of all functions. Associated example datasets are available from the [repository](https://github.com/Deniz-Koseoglu/CT-Toolkit/tree/master/Example%20Data).
 
 #### Values
 Apart from the exported .XLSX and .PDF files containing the relevant function output, runcor_analysis currently returns NULL. This may be changed for future releases.
