@@ -3,6 +3,10 @@ A Classification Tree (CT) and running correlation toolkit created in [RStudio](
 
 D. Köseoğlu, S.T. Belt, K. Husum, and J. Knies (2018), "An assessment of biomarker-based multivariate classification methods versus the PIP<sub>25</sub> index for paleo Arctic sea ice reconstruction" (manuscript submitted to the <i>Organic Geochemistry</i> journal).
 
+For a simplified introduction to decision tree methodology and the use of CT models for reconstructing past sea ice conditions, please also see:
+
+D. Köseoğlu, S.T. Belt, L. Smik, H. Yao, G. Panieri, and J. Knies (2018), "Complementary biomarker-based methods for characterising Arctic sea ice conditions: A case study comparison between multivariate analysis and the PIP<sub>25</sub> index", *Geochimica et Cosmochimica Acta* **222**, pp. 406-420. DOI: https://doi.org/10.1016/j.gca.2017.11.001. 
+
 The toolkit is provided as-is under the terms of the MIT licence (see LICENCE.md in the repository root).
 
 # Description
@@ -80,7 +84,7 @@ seed_val = 42)
 | **seed_val** | The random seed value to use for reproducible results with a given dataset. Can be any integer. The default is 42. |
 
 #### Details
-Please refer to the [CT Toolkit Vignette](http://www.google.co.uk/) for detailed, step-by-step usage examples of all functions.
+Please refer to the [CT Toolkit Vignette](http://www.google.co.uk/) for detailed, step-by-step usage examples of all functions. Example datasets are available from the [repository]().
 
 #### Values
 Apart from exporting model performance metrics, classification results and .PDF plots to a chosen directory, within the R environment, the function returns rpart or randomForest objects containing the full and pruned tree models, based on the parameters set by the user. Cross validation results and performance metrics for each model are also returned. This may be changed in the future such that the function does not return anything (i.e. returns NULL) within the R environment, as the exported results encompass all the required and useful output from the function.
