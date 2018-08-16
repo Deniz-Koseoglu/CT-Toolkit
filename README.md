@@ -28,6 +28,7 @@ R (>=3.4.2), rpart, data.table, car, readr, rattle, rpart.plot, e1071, DMwR, MLm
 source("C:/CT-Toolkit/CT_Toolkit.R")
 ```
 You are now ready to use the functions.
+
 5. Note that the "CT-Toolkit" folder contains the "CT_Toolkit.R" file, which can be opened in RStudio to examine and alter the source code, if required.
 
 # Functions
