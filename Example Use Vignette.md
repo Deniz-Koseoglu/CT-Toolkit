@@ -61,8 +61,11 @@ easy_rpart_results <- easy_rpart(training_data = "C:/CT Toolkit/Training/BS_surf
 ```
 The **Results** of `easy_rpart` analysis, assuming the function ran correctly, will be exported to **C:/CT Toolkit/Results** and should consist of three files:
 ![Image2](https://image.ibb.co/f85N5z/Untitled2.png)
+The file beginning with **"CT_Plots"** contains unpruned (i.e. full tree) and pruned (with both the minimum cross-validation error and 1-SE rule methods) classification trees, and associated variable importance plots.
+The file beginning with **CT_NewPredictions** contains downcore predictions of sea ice conditions (in this case) derived from the pruned tree model which yielded the best performance.
+Finally, the **.xlsx file** contains the pruned model performance metrics and variable importance values (sheets 1 and 2), results of cross validation classification for the training set (sheet 3), and downcore predictions using the pruned trees (sheet 4).
 
-Each argument is presented on a new line for clarity. Try changing some of the values for the function arguments (the full list and descriptions of which are available [here]()), and re-run the code.
+You may want to try changing some of the values for the function arguments (the full list and descriptions of which are available [here]()), and re-run the code to test combinations of parameters and how these affect the output.
 
 #### Calculating running correlations
 For running correlations, we will use the following code from the `runcor_analysis` function to calculate correlation between IP<sub>25</sub> and IPSO<sub>25</sub> in sediment core KA11:
@@ -92,4 +95,8 @@ runcor_results <- runcor_analysis(data_path="C:/CT Toolkit/Prediction/KA11.csv",
                                   height=7)
 
 ```
+The output of `runcor_analysis` should consist of two files:
+![Image3](https://image.ibb.co/i05rXe/Untitled3.png)
+
+
 The full list and descriptions of `runcor_analysis` arguments are available [here]().
