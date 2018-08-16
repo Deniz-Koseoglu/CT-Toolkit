@@ -61,9 +61,12 @@ easy_rpart_results <- easy_rpart(training_data = "C:/CT Toolkit/Training/BS_surf
 ```
 The **Results** of `easy_rpart` analysis, assuming the function ran correctly, will be exported to **C:/CT Toolkit/Results** and should consist of three files:
 ![Image2](https://image.ibb.co/f85N5z/Untitled2.png)
-The file beginning with **"CT_Plots"** contains unpruned (i.e. full tree) and pruned (with both the minimum cross-validation error and 1-SE rule methods) classification trees, and associated variable importance plots.
-The file beginning with **CT_NewPredictions** contains downcore predictions of sea ice conditions (in this case) derived from the pruned tree model which yielded the best performance.
-Finally, the **.xlsx file** contains the pruned model performance metrics and variable importance values (sheets 1 and 2), results of cross validation classification for the training set (sheet 3), and downcore predictions using the pruned trees (sheet 4).
+
+1. The file beginning with **"CT_Plots"** contains unpruned (i.e. full tree) and pruned (with both the minimum cross-validation error and 1-SE rule methods) classification trees, and associated variable importance plots.
+
+2. The file beginning with **CT_NewPredictions** contains downcore predictions of sea ice conditions (in this case) derived from the pruned tree model which yielded the best performance.
+
+3. Finally, the **.xlsx file** contains the pruned model performance metrics and variable importance values (sheets 1 and 2), results of cross validation classification for the training set (sheet 3), and downcore predictions using the pruned trees (sheet 4).
 
 You may want to try changing some of the values for the function arguments (the full list and descriptions of which are available [here]()), and re-run the code to test combinations of parameters and how these affect the output.
 
@@ -98,5 +101,7 @@ runcor_results <- runcor_analysis(data_path="C:/CT Toolkit/Prediction/KA11.csv",
 The output of `runcor_analysis` should consist of two files:
 ![Image3](https://image.ibb.co/i05rXe/Untitled3.png)
 
+1. The **.pdf file** contains the plots for every combination of running correlations, p-value corrections, and changepoint analysis algorithms chosen by the user.
+2. The **.xlsx file** contains correlation coefficients and p-values for every data type chosen for the running correlations (in this case: Raw Data, Absolute Differences, and Relative Differences on sheets 1, 2, and 3). The final sheet contains the changepoint locations for each of these data types along the x-axis (which is represented by Age, in cal kyr BP, in this example).
 
 The full list and descriptions of `runcor_analysis` arguments are available [here]().
