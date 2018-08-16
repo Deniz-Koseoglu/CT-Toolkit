@@ -6,7 +6,7 @@ D. Köseoğlu, S.T. Belt, K. Husum, and J. Knies (2018), "An assessment of bioma
 The toolkit is provided as-is under the terms of the MIT licence (see LICENCE.md in the repository root).
 
 # Description
-CT-Toolkit contains two functions as of version 1.0.0 (released 12/08/2018).
+CT-Toolkit contains two functions as of version 1.0.0 (released 17/08/2018).
 
 The `easy_rpart` function is essentially a wrapper that relies on other packages used to build, prune (based on optimisation of performance metrics), test, and visualise the results of Classification Trees constructed via the CART algorithm (Breiman et al., 1984).
 
@@ -68,7 +68,7 @@ seed_val = 42)
 | **prediction_axis** | A character vector of length 2, where the first and second elements are column names which should be used for the x and y axis of the prediction dataset plots. Defaults to c("Age", "SpSIC"), which assumes these columns are present in all prediction datasets. |
 | **plot_grp_labs** | The labels to use for predicted classes in the prediction dataset plots. By default, these are automatically taken from the training data. |
 | **tvar_lines** | Draws dashed horizontal lines at specified y-values in the prediction dataset plots (default values are 10 and 50). Useful for displaying class boundaries used in the training set. |
-| **plot_cols** | A character vector of colours to use for different classes in the prediction dataset plots. By default, these are generated automatically.  |
+| **plot_cols** | A character vector of colours to use for different classes in the prediction dataset plots. By default, these are generated automatically. |
 | **export_results** | A TRUE/FALSE logical. Should model performance metrics and class predictions be exported as an .XLSX file? Defaults to TRUE. |
 | **export_plots** | A TRUE/FALSE logical. Should plots be exported as a .PDF file? Defaults to TRUE. |
 | **x_lab** | The x-axis label to use for prediction dataset plots. Determined automatically from the data by default. |
@@ -97,10 +97,34 @@ runcor_analysis(data_path, separ=",", cor_vars, runcor_permutations="all", cor_m
                 print_plots=TRUE, export_plots=TRUE, height=7, width=10, export_path=getwd())
 ```
 #### Arguments
-
+| Argument | Description |
+| ------------- |-------------|
+| **data_path** | A character value with the full path to a dataset in .CSV format. |
+| **separ** | Separator value to use for imported .CSV files. Defaults to a comma.|
+| **cor_vars** | A character vector of length 2 denoting the variables to correlate. These must be valid column names within the imported dataset. |
+| **runcor_permutations** | Which values to use for calculating running correlations? Any combination of: "Raw Data", "Absolute Differences" and/or "Relative Differences". A value of "all" may be assigned to use all 3 possible data types. |
+| **cor_method** | The correlation method to use. One of: "pearson" (the default), "kendall" or "spearman". **NOTE**: As of CT Toolkit version 1.0.0, only "pearson" correlations have gone through extensive testing. |
+| **cor_window** | The sample size/window to use for running correlations. Defaults to 9. |
+| **move_by** | The step size to use when calculating running correlations. Defaults to 1. |
+| **confid_lvl** | A numeric value to use as the confidence level for running correlations. The default is 95% (0.95). |
+| **cor_align** | Controls the alignment of running correlations to the original data. Currently the only possible value for this argument is "center". See also the **align** argument for the function **running()** from the [gtools package](https://cran.r-project.org/web/packages/gtools/gtools.pdf).|
+| **output_vars** | A character vector of column names from the original dataset to be exported together with correlation coefficients and changepoint results. Defaults to "all", thus exporting the entirety of the originally imported dataset. |
+| **x_var** | The name of the column to use for plotting the x-axis (with correlation metric always on the y-axis). |
+| **x_lab** | A character value to be used as the x-axis label. Determined automatically from the data by default. |
+| **y_limit** | A numeric vector of length 2, denoting the y-axis limits for prediction dataset plots. Defaults to NA, such that the axis limits are determined freely for each plot based on the data. |
+| **pval_corrections** | The algorithm(s) to use for adjusting p-values to remove possible positive bias due to the multiple comparison problem. Any combination of: "bonferroni", "BH", "holm", "hochberg", "hommel", and/or "BY". A value of "all" may be assigned to use all possible p-value correction algorithms. |
+| **pval_labels** | A character vector of labels to use for each of the p-value correction algorithms passed to the **pval_corrections** argument. The default is "auto", which determines these automatically.|
+| **plot_cols** | A character vector of 3 colours to use for different significance levels in the running correlation plots. By default, these are generated automatically. |
+| **chgpt_methods** | The changepoint method(s) to use for detecting significant changes in running correlations. Any combination of: "Agglomerative", "Divisive", "CP3O", "KS CP3O", and/or "Univar". A value of "all" may be assigned to carry out all available changepoint analyses. |
+| **export_results** | A TRUE/FALSE logical. Should correlation and changepoint results be exported to .XLSX? Defaults to TRUE. |
+| **print_plots** | A TRUE/FALSE logical. Should plots be printed within the R environment? Defaults to TRUE. |
+| **export_plots** | A TRUE/FALSE logical. Should plots be exported as .PDF files? Defaults to TRUE. |
+| **height** | The height of exported .PDF plots. Defaults to 10 inches. |
+| **width** | The width of exported .PDF plots. Defaults to 10 inches. |
+| **export_path** | The character value for a directory to export results and plots to. Defaults to the working directory. |
 
 #### Details
 Please refer to the [CT Toolkit Vignette](http://www.google.co.uk/) for detailed, step-by-step usage examples of all functions.
 
 #### Values
-
+Apart from the exported .XLSX and .PDF files containing the relevant function output, runcor_analysis currently returns NULL. This may be changed for future releases.
