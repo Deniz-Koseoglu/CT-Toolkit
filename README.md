@@ -44,9 +44,9 @@ seed_val = 42)
 #### Arguments
 | Argument        | Description           |
 | ------------- |-------------|
-| **training_data**     | A character value with the full path to the training dataset in .CSV format, or a data.frame object containing the training dataset. |
-| col 2 is      | centered      |
-| zebra stripes | are neat      |
+| **training_data** | A character value with the full path to the training dataset in .CSV format, or a data.frame object containing the training dataset. If no value is explicitly provided, defaults to the working directory, which should contain a folder labelled "Training" containing the training dataset. |
+| **separ**      | Separator value to use for imported .CSV files. Defaults to a comma.|
+| **target_var** | A character value with the column name containing class information for the training dataset. Can also be provided as a list of 2 or 3 elements. If a list of 2 is provided, the first element should be the column name containing the class information, while the second element should contain the preferred order of the classes that will be shown in graphical output. A list of 3 should only be provided if the class information is not readily available and should instead be derived using threshold values of a data column (e.g. using 10% and 50% cutoff values of spring sea ice concentration to create 3 classes of sea ice conditions). In such cases, the first list element should contain the column name from which to derive class data, while the second element should contain the threshold values to derive class information from and the desired class labels, respectively.|
 
 
 #### Details
