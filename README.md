@@ -10,7 +10,7 @@ D. Köseoğlu, S.T. Belt, L. Smik, H. Yao, G. Panieri, and J. Knies (2018), "Com
 The toolkit is provided as-is under the terms of the MIT licence (see LICENCE.md in the repository root).
 
 # Description
-CT-Toolkit contains two functions as of version 1.0.0 (released 17/08/2018).
+CT-Toolkit contains two functions as of version 1.0.0 (released 16/08/2018).
 
 The `easy_rpart` function is essentially a wrapper that relies on other packages used to build, prune (based on optimisation of performance metrics), test, and visualise the results of Classification Trees constructed via the CART algorithm (Breiman et al., 1984).
 
