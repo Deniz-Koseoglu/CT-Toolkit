@@ -128,7 +128,7 @@ runcor_analysis(data_path, separ=",", cor_vars, runcor_permutations="all", cor_m
 | **export_path** | The character value for a directory to export results and plots to. Defaults to the working directory. |
 
 #### Details
-Please refer to the [CT Toolkit Vignette](http://www.google.co.uk/) for detailed, step-by-step usage examples of all functions.
+Please refer to the [CT Toolkit Vignette](http://www.google.co.uk/) for detailed, step-by-step usage examples of all functions. Example datasets are available from the [repository]().
 
 #### Values
 Apart from the exported .XLSX and .PDF files containing the relevant function output, runcor_analysis currently returns NULL. This may be changed for future releases.
