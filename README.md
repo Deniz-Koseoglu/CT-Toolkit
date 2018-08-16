@@ -73,22 +73,21 @@ seed_val = 42)
 | **export_plots** | A TRUE/FALSE logical. Should plots be exported as a .PDF file? Defaults to TRUE. |
 | **x_lab** | The x-axis label to use for prediction dataset plots. Determined automatically from the data by default. |
 | **y_lab** | The y-axis label to use for prediction dataset plots. Determined automatically from the data by default. |
-| **y_limit** | Defaults to NULL. |
-| **y_cut** |  |
+| **y_limit** | A numeric vector of length 2, denoting the y-axis limits for prediction dataset plots. Defaults to NA, such that the axis limits are determined freely for each plot based on the data. |
 | **width** | The width of exported .PDF plots. Defaults to 10 inches. |
 | **height** | The height of exported .PDF plots. Defaults to 10 inches. |
 | **export_path** | The character value for a directory to export results and plots to. Defaults to the working directory. |
 | **seed_val** | The random seed value to use for reproducible results with a given dataset. Can be any integer. The default is 42. |
 
 #### Details
-
+Please refer to the [CT Toolkit Vignette](http://www.google.co.uk/) for detailed, step-by-step usage examples of all functions.
 
 #### Values
-
+Apart from exporting model performance metrics, classification results and .PDF plots to a chosen directory, within the R environment, the function returns rpart or randomForest objects containing the full and pruned tree models, based on the parameters set by the user. Cross validation results and performance metrics for each model are also returned. This may be changed in the future such that the function does not return anything (i.e. returns NULL) within the R environment, as the exported results encompass all the required and useful output from the function.
 
 ### The `runcor_analysis` function
 #### Description
-
+A function for computing and visualising running/rolling correlations (Pearson, Kendall, or Spearman) between two specified variables using either absolute values, first absolute differences, and/or first relative differences. This can be supplemented by changepoint analysis to estimate the locations of significant correlation shifts.
 
 #### Usage
 
@@ -97,6 +96,7 @@ seed_val = 42)
 
 
 #### Details
+Please refer to the [CT Toolkit Vignette](http://www.google.co.uk/) for detailed, step-by-step usage examples of all functions.
 
 #### Values
 
