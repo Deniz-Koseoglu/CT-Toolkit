@@ -64,9 +64,9 @@ easy_rpart_results <- easy_rpart(training_data = "C:/CT Toolkit/Training/BS_surf
 The **Results** of `easy_rpart` analysis, assuming the function ran correctly, will be exported to **C:/CT Toolkit/Results** and should consist of three files:
 ![Image2](https://image.ibb.co/f85N5z/Untitled2.png)
 
-1. The file beginning with **"CT_Plots"** contains unpruned (i.e. full tree) and pruned (with both the minimum cross-validation error and 1-SE rule methods) classification trees, and associated variable importance plots.
+1. The file beginning with **"CT_Plots"** contains unpruned (i.e. full tree) and pruned (with both the minimum cross-validation error and 1-SE rule methods) classification tree structures, and associated variable importance plots.
 
-2. The file beginning with **CT_NewPredictions** contains downcore predictions of sea ice conditions (in this case) derived from the pruned tree model which yielded the best performance.
+2. The file beginning with **"CT_NewPredictions"** contains plots of downcore predictions of sea ice conditions (in this case) derived from the pruned tree model which yielded the best performance.
 
 3. Finally, the **.xlsx file** contains the pruned model performance metrics and variable importance values (sheets 1 and 2), results of cross validation classification for the training set (sheet 3), and downcore predictions using the pruned trees (sheet 4).
 
