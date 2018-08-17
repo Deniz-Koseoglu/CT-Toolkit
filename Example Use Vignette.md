@@ -73,7 +73,7 @@ The **Results** of `easy_rpart` analysis, assuming the function ran correctly, w
 You may want to try changing some of the values for the function arguments (the full list and descriptions of which are available [here](https://github.com/Deniz-Koseoglu/CT-Toolkit#arguments)), and re-run the code to test combinations of parameters and how these affect the output.
 
 #### Calculating running correlations
-For running correlations, we will use the following code from the `runcor_analysis` function to calculate correlation between IP<sub>25</sub> and IPSO<sub>25</sub> in sediment core KA11:
+For running correlations, we will use the following code from the `runcor_analysis` function to correlate IP<sub>25</sub> and IPSO<sub>25</sub> in marine sediment core KA11:
 ```r
 runcor_results <- runcor_analysis(data_path="C:/CT Toolkit/Prediction/KA11.csv",
                                   separ=",",
