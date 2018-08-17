@@ -61,7 +61,7 @@ seed_val = 42)
 | **prune_method** | The pruning strategy to use for determination of optimal tree size. Can be one of: "MinCP", "1SE" or "both" (the default), corresponding to using the minimum cross-validation error, 1-Standard Error rule, or both methods, respectively.|
 | **tree_number** | Only relevant when **class_method** is "RF". The number of trees to include in the random forest model (defaults to 500). |
 | **rf_vars** | Only relevant when **class_method** is "RF". The number of descriptive variables to try at each split when building a random forest model (defaults to 3). |
-| **cv_method** | The cross validation method to use for reducing positive bias when calculating model performance metrics. Can be one of: "repeatedcv" (the default), "LOOCV", "LGOCV", or "oob". The out-of-bag error estimate is only available when **class_method** is "RF". |
+| **cv_method** | The cross validation method to use for reducing positive bias when calculating model performance metrics. Can be one of: "repeatedcv" (the default), "LOOCV", "LGOCV", or "oob". The out-of-bag error estimate (i.e. "oob") is only available when **class_method** is "RF". |
 | **folds** | The number of folds to use for cross-validation. Defaults to 10. |
 | **repeats** | The number of times to repeat the cross-validation procedure before final performance metrics are aggregated. Defaults to 5. |
 | **train_percent** | Only used when **cv_method** is "LGOCV". The percentage of the training set to use for model training. The remainder will be used for testing. Defaults to 70. |
