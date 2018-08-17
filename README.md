@@ -112,7 +112,7 @@ runcor_analysis(data_path, separ=",", cor_vars, runcor_permutations="all", cor_m
 | **cor_method** | The correlation method to use. One of: "pearson" (the default), "kendall" or "spearman". **NOTE**: As of CT Toolkit version 1.0.0, only "pearson" correlations have gone through extensive testing. |
 | **cor_window** | The sample size/window to use for running correlations. Defaults to 9. |
 | **move_by** | The step size to use when calculating running correlations. Defaults to 1. |
-| **confid_lvl** | A numeric value to use as the confidence level for running correlations. The default is 95% (0.95). |
+| **confid_lvl** | A numeric value between 0 and 1 to use as the confidence level for running correlations. The default is 95% (0.95). |
 | **cor_align** | Controls the alignment of running correlations to the original data. Currently the only possible value for this argument is "center". See also the **align** argument for the function **running()** from the [gtools package](https://cran.r-project.org/web/packages/gtools/gtools.pdf).|
 | **output_vars** | A character vector of column names from the original dataset to be exported together with correlation coefficients and changepoint results. Defaults to "all", thus exporting the entirety of the originally imported dataset. |
 | **x_var** | The name of the column to use for plotting the x-axis (with correlation metric always on the y-axis). |
@@ -120,7 +120,7 @@ runcor_analysis(data_path, separ=",", cor_vars, runcor_permutations="all", cor_m
 | **y_limit** | A numeric vector of length 2, denoting the y-axis limits for prediction dataset plots. Defaults to NA, such that the axis limits are determined freely for each plot based on the data. |
 | **pval_corrections** | The algorithm(s) to use for adjusting p-values to remove possible positive bias due to the multiple comparison problem. Any combination of: "bonferroni", "BH", "holm", "hochberg", "hommel", and/or "BY". A value of "all" may be assigned to use all possible p-value correction algorithms. |
 | **pval_labels** | A character vector of labels to use for each of the p-value correction algorithms passed to the **pval_corrections** argument. The default is "auto", which determines these automatically.|
-| **plot_cols** | A character vector of 3 colours to use for different significance levels in the running correlation plots. By default, these are generated automatically. |
+| **plot_cols** | A character vector of 4 colours to use for different significance levels in the running correlation plots, and for the plot line itself. By default, these are generated automatically. |
 | **chgpt_methods** | The changepoint method(s) to use for detecting significant changes in running correlations. Any combination of: "Agglomerative", "Divisive", "CP3O", "KS CP3O", and/or "Univar". A value of "all" may be assigned to carry out all available changepoint analyses. |
 | **export_results** | A TRUE/FALSE logical. Should correlation and changepoint results be exported to .XLSX? Defaults to TRUE. |
 | **print_plots** | A TRUE/FALSE logical. Should plots be printed within the R environment? Defaults to TRUE. |
