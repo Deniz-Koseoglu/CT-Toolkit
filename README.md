@@ -1,7 +1,7 @@
 # CT Toolkit
 A Classification Tree (CT) and running correlation toolkit created in [RStudio](https://www.rstudio.com/products/rstudio/download/) (R version 3.4.2) as a supplement to the following publication: 
 
-D. Köseoğlu, S.T. Belt, K. Husum, and J. Knies (2018), "An assessment of biomarker-based multivariate classification methods versus the PIP<sub>25</sub> index for paleo Arctic sea ice reconstruction" (manuscript in review for the <i>Organic Geochemistry</i> journal).
+D. Köseoğlu, S.T. Belt, K. Husum, and J. Knies (2018), "An assessment of biomarker-based multivariate classification methods versus the PIP<sub>25</sub> index for paleo Arctic sea ice reconstruction", <i>Organic Geochemistry</i> <b>125</b>, pp. 82-94.
 
 For a simplified introduction to decision tree methodology, training and use of CT models for reconstructing centennial-scale sea ice conditions, please also see:
 
