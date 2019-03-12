@@ -59,7 +59,7 @@ easy_rpart_results <- easy_rpart(training_data = "C:/CT Toolkit/Training/BS_surf
                                  width=10,
                                  height=10,
                                  export_path="C:/CT Toolkit/Results",
-                                 seed_val=42)
+                                 seed_val=90)
 ```
 The **Results** of `easy_rpart` analysis, assuming the function ran correctly, will be exported to **C:/CT Toolkit/Results** and should consist of three files:
 ![Image2](https://image.ibb.co/f85N5z/Untitled2.png)
