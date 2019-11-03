@@ -17,7 +17,7 @@ The `easy_rpart` function is essentially a wrapper that relies on other packages
 The `runcor_analysis` function represents another wrapper used for computing and visualising running/rolling correlations (Pearson, Kendall, or Spearman) between two specified variables using either absolute values, first absolute differences, and/or first relative differences.
 
 # Dependencies
-R (>=3.4.2), rpart, data.table, car, readr, rattle, rpart.plot, e1071, DMwR, MLmetrics, rpartScore, pROC, caret, xlsx, randomForest, qpcR, scales, ggplot2, RColorBrewer, gtools, ecp, changepoint.
+R (≥3.4.2), rpart, data.table, car, readr, rattle, rpart.plot, e1071, DMwR, MLmetrics, rpartScore, pROC, caret, xlsx, randomForest, qpcR, scales, ggplot2, RColorBrewer, gtools, ecp, changepoint.
 
 # Getting started
 1. Install both [R](https://cran.r-project.org/mirrors.html) and [RStudio](https://www.rstudio.com/products/rstudio/download/) using the provided links to official sources.
