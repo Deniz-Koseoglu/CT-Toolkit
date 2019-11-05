@@ -1,7 +1,7 @@
 # Using CT Toolkit
 This vignette was created to showcase the usage of CT Toolkit functions, including `easy_rpart` and `runcor_analysis` (as of version 1.0.0). For more detailed installation and usage instructions, please refer to the [full manual](https://github.com/Deniz-Koseoglu/CT-Toolkit/blob/master/README.md).
 
-Please note that the vignette assumes basic knowledge of R syntax (version >=3.4.2).
+Please note that the vignette assumes basic knowledge of R syntax (version ≥3.4.2).
 
 The current version of CT Toolkit (1.0.0) has so far been tested solely on the Windows 10 operating system.
 
